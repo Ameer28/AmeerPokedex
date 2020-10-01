@@ -7,12 +7,22 @@ body {
 
 .navbar {
     background-color: #fff;
+    padding: 1rem;
+}
+
+.searchSection {
+    text-align: center;
+    padding: 2rem 0 2rem 0;
+}
+
+.searchSection p {
+    opacity: 75%;
 }
 
 .card {
     list-style: none;
     padding: 40px;
-    background-color: #f4f4f4;
+    background-color: #fff;
     color: #222;
     text-align: center;
 }
@@ -20,6 +30,17 @@ body {
 .card:hover {
     animation: bounce 0.5s linear;
     cursor: pointer;
+}
+
+.fas {
+    font-size: 120%;
+    color: #fff;
+    background-color: #feca1b;
+    padding: 5px;
+}
+
+.searchBarIcon input {
+    font-size: 20px;
 }
 
 @keyframes bounce {
@@ -103,8 +124,13 @@ button:hover {
     margin: 0 auto;
 }
 
-h1 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 24px;
+@media screen and ( max-width: 580px  ) {
+    .searchBarIcon input {
+        width: 75%;
+    }
+
+    .navbar img {
+        width: 100%;
+        height: auto;
+    }
 }
