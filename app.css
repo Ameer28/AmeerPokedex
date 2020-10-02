@@ -129,8 +129,13 @@ button:hover {
         width: 75%;
     }
 
+    .navbar {
+        height: 100%;
+        padding: 1rem;
+    }
+
     .navbar img {
         width: 100%;
-        height: auto;
     }
+
 }
